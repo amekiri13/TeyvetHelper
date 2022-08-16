@@ -17,9 +17,35 @@ router.get("/BasicInfo",(req, res,next) => {
     }
 });
 
+router.post("/BasicInfo",(req,res,next) => {
+    let server = req.body.server;
+    let uid = req.body.uid;
+    if (server.includes("cn")) {
+        res.json({"data":null,"message":"暂时不支持国服"});
+    }
+    else {
+        queryBasicInfo(server,uid,result => {
+            res.json(result);
+        });
+    }
+});
+
 router.get("/DetailInfo",(req, res,next) => {
     let server = req.query.server;
     let uid = req.query.uid;
+    if (server.includes("cn")) {
+        res.json({"data":null,"message":"暂时不支持国服"});
+    }
+    else {
+        queryDetailInfo(server,uid,result => {
+            res.json(result);
+        });
+    }
+});
+
+router.post("/DetailInfo",(req, res,next) => {
+    let server = req.body.server;
+    let uid = req.body.uid;
     if (server.includes("cn")) {
         res.json({"data":null,"message":"暂时不支持国服"});
     }
@@ -34,6 +60,19 @@ router.get("/AbyssInfo",(req,res,next) => {
     let server = req.query.server;
     let uid = req.query.uid;
     let type = req.query.type;
+    if (server.includes("cn")) {
+        res.json({"data":null,"message":"暂时不支持国服"});
+    }
+    else {
+        queryAbyssInfo(server,uid,type,result => {
+            res.json(result);
+        });
+    }
+});
+router.post("/AbyssInfo",(req,res,next) => {
+    let server = req.body.server;
+    let uid = req.body.uid;
+    let type = req.body.type;
     if (server.includes("cn")) {
         res.json({"data":null,"message":"暂时不支持国服"});
     }
