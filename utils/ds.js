@@ -7,5 +7,8 @@ function generateDS(salt) {
     let sign2 = md5(`d7d38ba4719a2dfc6ec10c956733a8f4com.mihoyo.hyperion2.1.0${timestamp}`);
     return {timestamp,randomStr,sign1,sign2};
 }
+function generateDS_CN(salt) {
+    
+}
 
 module.exports = {generateDS}
