@@ -5,11 +5,8 @@ let {queryBasicInfo,queryBasicInfoCN} = require('../web/basic');
 router.get("/BasicInfo",(req, res,next) => {
     let server = req.query.server;
     let uid = req.query.uid;
-    // 国服进入此处分支
     if (server.includes("cn")) {
-        queryBasicInfoCN(server,uid,result => {
-            res.json(result);
-        })
+        res.json({"data":null,"message":"暂时不支持国服"});
     }
     else {
         queryBasicInfo(server,uid,result => {
