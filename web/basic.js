@@ -1,8 +1,8 @@
 const axios = require("axios")
 const stringRandom = require('string-random');
 const md5 = require("md5");
-const {appVersion,clientType,OS_SALT,CN_SALT,OS_COOKIES,CN_COOKIES,userAgent} = require("config")
-let {generateDS} = require("../utils/ds")
+const {appVersion,clientType,OS_SALT,CN_SALT,OS_COOKIES,CN_COOKIES,userAgent} = require("./config");
+let {generateDS} = require("../utils/ds");
 
 function queryBasicInfo(server,uid,callback) {
     let _result = generateDS(OS_SALT);
@@ -43,3 +43,5 @@ function queryBasicInfoCN(server,uid,callback) {
         console.log(err);
     });
 }
+
+module.exports = {queryBasicInfo,queryBasicInfoCN}
