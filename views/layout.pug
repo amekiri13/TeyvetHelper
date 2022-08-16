@@ -2,6 +2,13 @@ doctype html
 html
   head
     title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/main.css')
+    link(rel='stylesheet', href='https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css')
   body
+    header
+      nav.navbar.navbar-expand-sm.navbar-toggleable-sm.navbar-light.bg-white.border-bottom.box-shadow.mb-3.fixed-top
+        div.container-fluid
+          a.navbar-brand(href='javascript:;') 雨雾amekiri的小屋
+          div.collapse.navbar-collapse
+            span.navbar-text 提瓦特小助手
     block content
