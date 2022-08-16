@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-const {queryBasicInfo,queryBasicInfoCN} = require('../web/basic');
+const {queryBasicInfo} = require('../web/basic');
 const {queryDetailInfo} = require("../web/details");
 const {queryAbyssInfo} = require("../web/abyss");
 
