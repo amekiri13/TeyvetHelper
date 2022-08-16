@@ -18,7 +18,7 @@ function queryBasicInfo(server,uid,callback) {
             }
         })
         .then(res => {
-            callback(res);
+            callback(res.data);
         }).catch(err => {
             console.log(err);
         });
@@ -38,7 +38,7 @@ function queryBasicInfoCN(server,uid,callback) {
             }
         })
         .then(res => {
-            callback(res);
+            callback(res.data);
         }).catch(err => {
         console.log(err);
     });
