@@ -1,6 +1,4 @@
-const axios = require("axios")
-const stringRandom = require('string-random');
-const md5 = require("md5");
+const axios = require("axios");
 const {appVersion,clientType,OS_SALT,CN_SALT,OS_COOKIES,CN_COOKIES,userAgent} = require("./config");
 let {generateDS} = require("../utils/ds");
 

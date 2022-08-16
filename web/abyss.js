@@ -2,13 +2,10 @@ const axios = require("axios");
 const {appVersion,clientType,OS_SALT,CN_SALT,OS_COOKIES,CN_COOKIES,userAgent} = require("./config");
 let {generateDS} = require("../utils/ds");
 
-function queryDetailInfo(server,uid,callback) {
+function queryAbyssInfo(server,uid,schedule_type,callback) {
     let _result = generateDS(OS_SALT);
-    axios.post(`https://bbs-api-os.hoyolab.com/game_record/genshin/api/character`,
+    axios.get(`https://bbs-api-os.hoyolab.com/game_record/genshin/api/spiralAbyss?server=${server}&role_id=${uid}&schedule_type=${schedule_type}`,
         {
-            server:server,
-            role_id:uid
-        },{
             headers:{
                 "x-rpc-app_version":appVersion,
                 "x-rpc-client_type":clientType,
@@ -25,4 +22,4 @@ function queryDetailInfo(server,uid,callback) {
     });
 }
 
-module.exports = {queryDetailInfo}
+module.exports = {queryAbyssInfo}
