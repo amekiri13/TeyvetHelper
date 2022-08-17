@@ -1,4 +1,10 @@
 extends layout
 
 block content
-
+    script(src='/javascripts/main.js')
+    div.container
+        div.row.g-2
+            div.input-group#index
+                span.input-group-text#server Asia Server
+                input.form-control(type='text',placeholder='请输入UID', v-model='uid' @input='judgeServer')
+                button.btn.btn-success(type='submit') 提交

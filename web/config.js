@@ -1,5 +1,5 @@
 
-const appVersion = "2.11.0";
+const appVersion = "1.5.0";
 const clientType = 4;
 
 const OS_SALT = "6cqshh5dhw73bzxn20oexa9k516chk7s";
