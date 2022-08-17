@@ -48,7 +48,9 @@ $().ready(()=> {
                         let data = res.data;
                         $("#dataSummary").empty();
                         $("#playerInfo").empty();
+                        $("#character").empty();
                         if (data.message != 'OK') {
+                            alert(data.message);
                             return;
                         }
                         $("#playerInfo").append(`
@@ -91,7 +93,24 @@ $().ready(()=> {
                             </tbody>
                         </table>
                         `);
+                        $("#character").append(`
+                        <h1 style="margin: 10px 0">角色信息</h1>
+                        <div class="container" id="characters"></div>
+                        `);
+                        let avatarNumber = data.data.avatars.length;
+                        console.log(avatarNumber);
                         console.log(data);
+                        let tempValue = 0;
+                        for (let i=0;i<avatarNumber / 4;i++) {
+                            $("#characters").append(`<div id="line${i}" class="row"></div>`);
+                            for (let j=0;j < 4;j++) {
+                                $("#line" + i).prepend(`<div class="col">
+                                        <img src="${data.data.avatars[tempValue].image}" style="margin: 0 auto">
+                                        <p style="margin: 5px auto;">${data.data.avatars[tempValue].name}&nbsp;${data.data.avatars[tempValue].level}级&nbsp;${data.data.avatars[tempValue].actived_constellation_num}命座&nbsp;好感度${data.data.avatars[tempValue].fetter}</p>
+                                    </div>`);
+                                tempValue++;
+                            }
+                        }
                     })
                     .catch(err => {
                         console.log(err);
