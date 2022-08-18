@@ -25,7 +25,7 @@
 - API：https://teyvet.amekiri.com/api/BasicInfo
 - 请求方法：GET/POST
 - 参数：
-  - server：服务器（cn_gf01，cf_qd01，os_asia，os_usa，os_cht，os_euro）
+  - server：服务器（cn_gf01，cn_qd01，os_asia，os_usa，os_cht，os_euro）
   - uid：玩家游戏UID
 
 ### 查询角色详细信息
@@ -33,7 +33,7 @@
 - API：https://teyvet.amekiri.com/api/DetailInfo
 - 请求方法：GET/POST
 - 参数：
-  - server：服务器（cn_gf01，cf_qd01，os_asia，os_usa，os_cht，os_euro）
+  - server：服务器（cn_gf01，cn_qd01，os_asia，os_usa，os_cht，os_euro）
   - uid：玩家游戏UID
 
 ### 查询当期和上期深渊数据
@@ -41,6 +41,6 @@
 - API：https://teyvet.amekiri.com/api/AbyssInfo
 - 请求方法：GET/POST
 - 参数：
-  - server：服务器（cn_gf01，cf_qd01，os_asia，os_usa，os_cht，os_euro）
+  - server：服务器（cn_gf01，cn_qd01，os_asia，os_usa，os_cht，os_euro）
   - uid：玩家游戏UID
   - type：请求类型（1为当期，2为上期）
