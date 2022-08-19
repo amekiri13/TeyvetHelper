@@ -122,7 +122,7 @@ $().ready(()=> {
                         for (let i=0;i<worldData.length;i++) {
                             $("#data_worldExp").append(`
                                 <div class="card">
-                                    <div class="card-head">${worldData[i].name}</div>
+                                    <div class="card-header">${worldData[i].name}</div>
                                     <div class="card-body">
                                         <p>探索度：${worldData[i].exploration_percentage / 10.0}%</p>
                                     </div>
