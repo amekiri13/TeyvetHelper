@@ -138,7 +138,7 @@ $().ready(()=> {
                             history.pushState({uid : this.uid,pageData: $("characterdata").html()}, "", this.uid);
                         }
                         else {
-                            history.pushState({uid : this.uid,pageData: $("characterdata").html()}, "", "/tools/online-html/" + this.uid);
+                            history.pushState({uid : this.uid,pageData: $("characterdata").html()}, "", "/" + this.uid);
                         }
                     })
                     .catch(err => {
