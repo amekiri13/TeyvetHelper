@@ -111,6 +111,17 @@ $().ready(()=> {
                                 tempValue++;
                             }
                         }
+                        $("#worldExploration").prepend(`
+                            <h1>世界探索度</h1>
+                            <div id="data_worldExp"></div>
+                        `);
+                        let worldData = data.data.world_explorations;
+                        for (let i=0;i<worldData.length;i++) {
+                            $("#data_worldExp").append(`
+                                <h2>${worldData[i].name}</h2>
+                                <p>探索度：${worldData[i].exploration_percentage / 100.0}%</p>
+                            `);
+                        }
                     })
                     .catch(err => {
                         console.log(err);
