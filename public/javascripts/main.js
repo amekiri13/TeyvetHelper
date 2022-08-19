@@ -43,6 +43,7 @@ $().ready(()=> {
                     server = 'os_asia';
                 else if (server === 'HK, MC & TW Server')
                     server = 'os_cht';
+
                 axios.get(`/api/BasicInfo?uid=${this.uid}&server=${server}`)
                     .then(res => {
                         let data = res.data;
@@ -129,6 +130,16 @@ $().ready(()=> {
                                 </div>
                             `);
                         }
+
+                        let temp_url = window.location.href;
+                        let is_inclined = temp_url.charAt(temp_url.length - 1);
+                        console.log(is_inclined);
+                        if (is_inclined === '/') {
+                            history.pushState({uid : this.uid}, "", this.uid);
+                        }
+                        else {
+                            history.pushState({uid : this.uid}, "", "/tools/online-html/" + this.uid);
+                        }
                     })
                     .catch(err => {
                         console.log(err);
@@ -136,6 +147,11 @@ $().ready(()=> {
             }
         }
     }
+
+    window.onpopstate = function (event) {
+        console.log('location: ' + document.location);
+        console.log('state: ' + JSON.stringify(event.state));
+    };
 
     Vue.createApp(index).mount('#index');
 })
