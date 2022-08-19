@@ -49,6 +49,7 @@ $().ready(()=> {
                         $("#dataSummary").empty();
                         $("#playerInfo").empty();
                         $("#character").empty();
+                        $("#worldExploration").empty();
                         if (data.message != 'OK') {
                             alert(data.message);
                             return;
@@ -104,7 +105,7 @@ $().ready(()=> {
                         for (let i=0;i<avatarNumber / 4;i++) {
                             $("#characters").append(`<div id="line${i}" class="row"></div>`);
                             for (let j=0;j < 4;j++) {
-                                if (tempValue < avatarNumber.length) {
+                                if (tempValue < avatarNumber) {
                                     $("#line" + i).prepend(`<div class="col">
                                         <img src="${data.data.avatars[tempValue].image}" style="margin: 0 auto">
                                         <p style="margin: 5px auto;">${data.data.avatars[tempValue].name}&nbsp;${data.data.avatars[tempValue].level}级&nbsp;${data.data.avatars[tempValue].actived_constellation_num}命座&nbsp;好感度${data.data.avatars[tempValue].fetter}</p>
