@@ -135,10 +135,10 @@ $().ready(()=> {
                         let is_inclined = temp_url.charAt(temp_url.length - 1);
                         console.log(is_inclined);
                         if (is_inclined === '/') {
-                            history.pushState({uid : this.uid}, "", this.uid);
+                            history.pushState({uid : this.uid,pageData: $("characterdata").html()}, "", this.uid);
                         }
                         else {
-                            history.pushState({uid : this.uid}, "", "/tools/online-html/" + this.uid);
+                            history.pushState({uid : this.uid,pageData: $("characterdata").html()}, "", "/tools/online-html/" + this.uid);
                         }
                     })
                     .catch(err => {
@@ -149,8 +149,16 @@ $().ready(()=> {
     }
 
     window.onpopstate = function (event) {
+        let state = event.state;
         console.log('location: ' + document.location);
-        console.log('state: ' + JSON.stringify(event.state));
+        console.log('state: ' + JSON.stringify(state));
+
+        if (state == null) {
+            $("#characterdata").empty();
+        }
+        else {
+            $("#characterdata").html(state.pageData);
+        }
     };
 
     Vue.createApp(index).mount('#index');
