@@ -144,6 +144,18 @@ $().ready(()=> {
                     .catch(err => {
                         console.log(err);
                     })
+                axios.get(`/api/DetailInfo?uid=${this.uid}&server=${server}`)
+                    .then(res => {
+                        console.log(res.data);
+                    })
+                    .catch(err => {
+                        console.log(err);
+                    });
+                axios.get(`/api/AbyssInfo?uid=${this.uid}&server=${server}&type=1`)
+                    .then(res => {
+                        console.log(res.data);
+                    })
+                    .catch(err => console.log(err));
             }
         }
     }
