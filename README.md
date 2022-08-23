@@ -27,6 +27,7 @@
 - 参数：
   - server：服务器（cn_gf01，cn_qd01，os_asia，os_usa，os_cht，os_euro）
   - uid：玩家游戏UID
+  - cookie(可选): 用户Cookie（可通过米游社/HoYoLAB获取）
 
 ### 查询角色详细信息
 
@@ -35,6 +36,7 @@
 - 参数：
   - server：服务器（cn_gf01，cn_qd01，os_asia，os_usa，os_cht，os_euro）
   - uid：玩家游戏UID
+  - cookie(可选): 用户Cookie（可通过米游社/HoYoLAB获取）
 
 ### 查询当期和上期深渊数据
 
@@ -44,3 +46,4 @@
   - server：服务器（cn_gf01，cn_qd01，os_asia，os_usa，os_cht，os_euro）
   - uid：玩家游戏UID
   - type：请求类型（1为当期，2为上期）
+  - cookie(可选): 用户Cookie（可通过米游社/HoYoLAB获取）

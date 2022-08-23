@@ -116,7 +116,7 @@ $().ready(()=> {
                             }
                         }
                         $("#worldExploration").prepend(`
-                            <h1>世界探索度</h1>
+                            <h1 style="margin: 10px 0">世界探索度</h1>
                             <div id="data_worldExp"></div>
                         `);
                         let worldData = data.data.world_explorations;
