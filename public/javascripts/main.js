@@ -9,7 +9,7 @@ $().ready(()=> {
         },
         methods:{
             judgeServer(event) {
-                console.log(this.uid);
+                // console.log(this.uid);
                 if (this.uid.charAt(0) === '1' || this.uid.charAt(0) === '2') {
                     this.servername = "天空岛";
                 }
@@ -162,8 +162,8 @@ $().ready(()=> {
 
     window.onpopstate = function (event) {
         let state = event.state;
-        console.log('location: ' + document.location);
-        console.log('state: ' + JSON.stringify(state));
+        // console.log('location: ' + document.location);
+        // console.log('state: ' + JSON.stringify(state));
 
         if (state == null) {
             $("#characterdata").empty();
