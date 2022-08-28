@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="081223f0-dd9b-4403-bf88-fa154ed30aec" name="Changes" comment="降低代码耦合性">
+    <list default="true" id="081223f0-dd9b-4403-bf88-fa154ed30aec" name="Changes" comment="...">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/javascripts/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/javascripts/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.pug" afterDir="false" />
@@ -78,7 +78,7 @@
       <workItem from="1661689167998" duration="2664000" />
       <workItem from="1661693542801" duration="1986000" />
       <workItem from="1661696528426" duration="1329000" />
-      <workItem from="1661697878720" duration="2686000" />
+      <workItem from="1661697878720" duration="3730000" />
     </task>
     <task id="LOCAL-00001" summary="Bug repair">
       <created>1660640866505</created>
@@ -248,7 +248,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661699780409</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="...">
+      <created>1661700841698</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1661700841698</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -283,9 +290,9 @@
     <MESSAGE value="细节修正" />
     <MESSAGE value="支持用户自定义Cookie" />
     <MESSAGE value="提供RESTful风格" />
-    <MESSAGE value="..." />
     <MESSAGE value="降低代码耦合性" />
-    <option name="LAST_COMMIT_MESSAGE" value="降低代码耦合性" />
+    <MESSAGE value="..." />
+    <option name="LAST_COMMIT_MESSAGE" value="..." />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>

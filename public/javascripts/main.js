@@ -8,12 +8,6 @@ $().ready(()=> {
             }
         },
         methods:{
-            onload() {
-                console.log("loaded");
-                if (isUidExist) {
-                    getAndShowCharacterInfo(this.servername,this.uid);
-                }
-            },
             judgeServer(event) {
                 // console.log(this.uid);
                 if (this.uid.charAt(0) === '1' || this.uid.charAt(0) === '2') {
