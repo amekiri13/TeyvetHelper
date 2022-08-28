@@ -4,7 +4,7 @@ $().ready(()=> {
         data() {
             return {
                 'servername': 'Asia Server',
-                'uid': '802981415'
+                'uid': isUidExist ? t_uid : '802981415'
             }
         },
         methods:{
@@ -30,7 +30,7 @@ $().ready(()=> {
                 }
             },
             getCharacterData(event) {
-                getAndShowCharacterInfo(this.servername,this.uid)
+                getAndShowCharacterInfo(this.servername,this.uid);
             }
         }
     }
@@ -51,8 +51,7 @@ $().ready(()=> {
     Vue.createApp(index).mount('#index');
 });
 
-function getAndShowCharacterInfo(server,uid) {
-    var servername = server;
+function transformServerName(server) {
     if (server === "天空岛")
         server = 'cn_gf01';
     else if (server === "世界树")
@@ -65,6 +64,24 @@ function getAndShowCharacterInfo(server,uid) {
         server = 'os_asia';
     else if (server === 'HK, MC & TW Server')
         server = 'os_cht';
+    return server;
+}
+
+function getAndShowCharacterInfo(server,uid) {
+    var servername = server;
+    // if (server === "天空岛")
+    //     server = 'cn_gf01';
+    // else if (server === "世界树")
+    //     server = 'cn_qd01';
+    // else if (server === 'America Server')
+    //     server = 'os_usa';
+    // else if (server === 'Europe Server')
+    //     server = 'os_euro';
+    // else if (server === 'Asia Server')
+    //     server = 'os_asia';
+    // else if (server === 'HK, MC & TW Server')
+    //     server = 'os_cht';
+    server = transformServerName(server);
 
     axios.get(`/api/BasicInfo?uid=${uid}&server=${server}`)
         .then(res => {

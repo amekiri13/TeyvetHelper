@@ -1,9 +1,11 @@
 extends layout
 
 block content
-    - var t_uid = uid;
-    - var isUidExists = false;
-    - if (t_uid !== undefined) {isUidExists = true}
+    - var tuid = uid;
+    if tuid !== undefined
+        script var isUidExist = true;t_uid = #{uid};
+    else
+        script var isUidExist = false;t_uid = '';
     script(src='/javascripts/main.js')
     div.container
         div.row.g-2
