@@ -8,6 +8,12 @@ $().ready(()=> {
             }
         },
         methods:{
+            onload() {
+                console.log("loaded");
+                if (isUidExist) {
+                    getAndShowCharacterInfo(this.servername,this.uid);
+                }
+            },
             judgeServer(event) {
                 // console.log(this.uid);
                 if (this.uid.charAt(0) === '1' || this.uid.charAt(0) === '2') {
@@ -34,6 +40,11 @@ $().ready(()=> {
             }
         }
     }
+
+    // if (isUidExist) {
+    //     console.log(transformServerName($("#servername").text()));
+        // getAndShowCharacterInfo(transformServerName($("#servername").text()),t_uid);
+    // }
 
     window.onpopstate = function (event) {
         let state = event.state;
@@ -69,18 +80,6 @@ function transformServerName(server) {
 
 function getAndShowCharacterInfo(server,uid) {
     var servername = server;
-    // if (server === "天空岛")
-    //     server = 'cn_gf01';
-    // else if (server === "世界树")
-    //     server = 'cn_qd01';
-    // else if (server === 'America Server')
-    //     server = 'os_usa';
-    // else if (server === 'Europe Server')
-    //     server = 'os_euro';
-    // else if (server === 'Asia Server')
-    //     server = 'os_asia';
-    // else if (server === 'HK, MC & TW Server')
-    //     server = 'os_cht';
     server = transformServerName(server);
 
     axios.get(`/api/BasicInfo?uid=${uid}&server=${server}`)

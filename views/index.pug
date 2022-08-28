@@ -9,7 +9,7 @@ block content
     script(src='/javascripts/main.js')
     div.container
         div.row.g-2
-            div.input-group#index
+            div.input-group#index(@load='onload')
                 span.input-group-text {{servername}}
                 input.form-control(type='text',placeholder='请输入UID', v-model='uid' @input='judgeServer')
                 button.btn.btn-success(type='submit' @click='getCharacterData') 提交
