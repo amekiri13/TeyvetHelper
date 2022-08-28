@@ -30,44 +30,66 @@ $().ready(()=> {
                 }
             },
             getCharacterData(event) {
-                let server = this.servername;
-                if (server === "天空岛")
-                    server = 'cn_gf01';
-                else if (server === "世界树")
-                    server = 'cn_qd01';
-                else if (server === 'America Server')
-                    server = 'os_usa';
-                else if (server === 'Europe Server')
-                    server = 'os_euro';
-                else if (server === 'Asia Server')
-                    server = 'os_asia';
-                else if (server === 'HK, MC & TW Server')
-                    server = 'os_cht';
+                getAndShowCharacterInfo(this.servername,this.uid)
+            }
+        }
+    }
 
-                axios.get(`/api/BasicInfo?uid=${this.uid}&server=${server}`)
-                    .then(res => {
-                        let data = res.data;
-                        $("#dataSummary").empty();
-                        $("#playerInfo").empty();
-                        $("#character").empty();
-                        $("#worldExploration").empty();
-                        if (data.message != 'OK') {
-                            alert(data.message);
-                            return;
-                        }
-                        $("#playerInfo").append(`
+    window.onpopstate = function (event) {
+        let state = event.state;
+        // console.log('location: ' + document.location);
+        // console.log('state: ' + JSON.stringify(state));
+
+        if (state == null) {
+            $("#characterdata").empty();
+        }
+        else {
+            $("#characterdata").html(state.pageData);
+        }
+    };
+
+    Vue.createApp(index).mount('#index');
+});
+
+function getAndShowCharacterInfo(server,uid) {
+    var servername = server;
+    if (server === "天空岛")
+        server = 'cn_gf01';
+    else if (server === "世界树")
+        server = 'cn_qd01';
+    else if (server === 'America Server')
+        server = 'os_usa';
+    else if (server === 'Europe Server')
+        server = 'os_euro';
+    else if (server === 'Asia Server')
+        server = 'os_asia';
+    else if (server === 'HK, MC & TW Server')
+        server = 'os_cht';
+
+    axios.get(`/api/BasicInfo?uid=${uid}&server=${server}`)
+        .then(res => {
+            let data = res.data;
+            $("#dataSummary").empty();
+            $("#playerInfo").empty();
+            $("#character").empty();
+            $("#worldExploration").empty();
+            if (data.message != 'OK') {
+                alert(data.message);
+                return;
+            }
+            $("#playerInfo").append(`
                         <div style="margin: 10px 0">
                             <h3 style="margin: 10px 20px 10px 0">${data.data.role.nickname}
-                            <small class="text-muted">${this.servername} ${data.data.role.level}级</small>
+                            <small class="text-muted">${servername} ${data.data.role.level}级</small>
                             </h3>
                         </div>
                         `);
-                        let allChests = data.data.stats.luxurious_chest_number +
-                            data.data.stats.precious_chest_number +
-                            data.data.stats.exquisite_chest_number +
-                            data.data.stats.common_chest_number +
-                            data.data.stats.magic_chest_number;
-                        $("#dataSummary").append(`
+            let allChests = data.data.stats.luxurious_chest_number +
+                data.data.stats.precious_chest_number +
+                data.data.stats.exquisite_chest_number +
+                data.data.stats.common_chest_number +
+                data.data.stats.magic_chest_number;
+            $("#dataSummary").append(`
                         <h1 style="margin: 10px 0">数据总览</h1>
                         <table class="table">
                             <tbody>
@@ -95,33 +117,33 @@ $().ready(()=> {
                             </tbody>
                         </table>
                         `);
-                        $("#character").append(`
+            $("#character").append(`
                         <h1 style="margin: 10px 0">角色信息</h1>
                         <div class="container" id="characters"></div>
                         `);
-                        let avatarNumber = data.data.avatars.length;
-                        console.log(avatarNumber);
-                        console.log(data);
-                        let tempValue = 0;
-                        for (let i=0;i<avatarNumber / 4;i++) {
-                            $("#characters").append(`<div id="line${i}" class="row"></div>`);
-                            for (let j=0;j < 4;j++) {
-                                if (tempValue < avatarNumber) {
-                                    $("#line" + i).prepend(`<div class="col">
+            let avatarNumber = data.data.avatars.length;
+            console.log(avatarNumber);
+            console.log(data);
+            let tempValue = 0;
+            for (let i=0;i<avatarNumber / 4;i++) {
+                $("#characters").append(`<div id="line${i}" class="row"></div>`);
+                for (let j=0;j < 4;j++) {
+                    if (tempValue < avatarNumber) {
+                        $("#line" + i).prepend(`<div class="col">
                                         <img src="${data.data.avatars[tempValue].image}" style="margin: 0 auto">
                                         <p style="margin: 5px auto;">${data.data.avatars[tempValue].name}&nbsp;${data.data.avatars[tempValue].level}级&nbsp;${data.data.avatars[tempValue].actived_constellation_num}命座&nbsp;好感度${data.data.avatars[tempValue].fetter}</p>
                                     </div>`);
-                                    tempValue++;
-                                }
-                            }
-                        }
-                        $("#worldExploration").prepend(`
+                        tempValue++;
+                    }
+                }
+            }
+            $("#worldExploration").prepend(`
                             <h1 style="margin: 10px 0">世界探索度</h1>
                             <div id="data_worldExp"></div>
                         `);
-                        let worldData = data.data.world_explorations;
-                        for (let i=0;i<worldData.length;i++) {
-                            $("#data_worldExp").append(`
+            let worldData = data.data.world_explorations;
+            for (let i=0;i<worldData.length;i++) {
+                $("#data_worldExp").append(`
                                 <div class="card">
                                     <div class="card-header">${worldData[i].name}</div>
                                     <div class="card-body">
@@ -129,49 +151,31 @@ $().ready(()=> {
                                     </div>
                                 </div>
                             `);
-                        }
-
-                        let temp_url = window.location.href;
-                        let is_inclined = temp_url.charAt(temp_url.length - 1);
-                        console.log(is_inclined);
-                        if (is_inclined === '/') {
-                            history.pushState({uid : this.uid,pageData: $("characterdata").html()}, "", this.uid);
-                        }
-                        else {
-                            history.pushState({uid : this.uid,pageData: $("characterdata").html()}, "", "/" + this.uid);
-                        }
-                    })
-                    .catch(err => {
-                        console.log(err);
-                    })
-                axios.get(`/api/DetailInfo?uid=${this.uid}&server=${server}`)
-                    .then(res => {
-                        console.log(res.data);
-                    })
-                    .catch(err => {
-                        console.log(err);
-                    });
-                axios.get(`/api/AbyssInfo?uid=${this.uid}&server=${server}&type=1`)
-                    .then(res => {
-                        console.log(res.data);
-                    })
-                    .catch(err => console.log(err));
             }
-        }
-    }
 
-    window.onpopstate = function (event) {
-        let state = event.state;
-        // console.log('location: ' + document.location);
-        // console.log('state: ' + JSON.stringify(state));
-
-        if (state == null) {
-            $("#characterdata").empty();
-        }
-        else {
-            $("#characterdata").html(state.pageData);
-        }
-    };
-
-    Vue.createApp(index).mount('#index');
-})
+            let temp_url = window.location.href;
+            let is_inclined = temp_url.charAt(temp_url.length - 1);
+            console.log(is_inclined);
+            if (is_inclined === '/') {
+                history.pushState({uid : uid,pageData: $("characterdata").html()}, "", uid);
+            }
+            else {
+                history.pushState({uid : uid,pageData: $("characterdata").html()}, "", "/" + uid);
+            }
+        })
+        .catch(err => {
+            console.log(err);
+        })
+    axios.get(`/api/DetailInfo?uid=${uid}&server=${server}`)
+        .then(res => {
+            console.log(res.data);
+        })
+        .catch(err => {
+            console.log(err);
+        });
+    axios.get(`/api/AbyssInfo?uid=${uid}&server=${server}&type=1`)
+        .then(res => {
+            console.log(res.data);
+        })
+        .catch(err => console.log(err));
+}

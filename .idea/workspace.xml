@@ -2,131 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="081223f0-dd9b-4403-bf88-fa154ed30aec" name="Changes" comment="...">
-      <change afterPath="$PROJECT_DIR$/.idea/TeyvetHelper.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/asynckit/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/asynckit/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/asynckit/bench.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/asynckit/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/asynckit/lib/abort.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/asynckit/lib/async.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/asynckit/lib/defer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/asynckit/lib/iterate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/asynckit/lib/readable_asynckit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/asynckit/lib/readable_parallel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/asynckit/lib/readable_serial.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/asynckit/lib/readable_serial_ordered.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/asynckit/lib/state.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/asynckit/lib/streamify.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/asynckit/lib/terminator.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/asynckit/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/asynckit/parallel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/asynckit/serial.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/asynckit/serialOrdered.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/asynckit/stream.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/axios/CHANGELOG.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/axios/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/axios/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/axios/SECURITY.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/axios/UPGRADE_GUIDE.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/axios/dist/axios.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/axios/dist/axios.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/axios/dist/axios.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/axios/dist/axios.min.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/axios/index.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/axios/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/adapters/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/adapters/http.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/adapters/xhr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/axios.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/cancel/CancelToken.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/cancel/CanceledError.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/cancel/isCancel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/core/Axios.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/core/AxiosError.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/core/InterceptorManager.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/core/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/core/buildFullPath.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/core/dispatchRequest.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/core/mergeConfig.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/core/settle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/core/transformData.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/defaults/env/FormData.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/defaults/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/defaults/transitional.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/env/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/env/data.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/helpers/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/helpers/bind.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/helpers/buildURL.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/helpers/combineURLs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/helpers/cookies.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/helpers/deprecatedMethod.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/helpers/isAbsoluteURL.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/helpers/isAxiosError.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/helpers/isURLSameOrigin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/helpers/normalizeHeaderName.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/helpers/null.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/helpers/parseHeaders.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/helpers/parseProtocol.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/helpers/spread.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/helpers/toFormData.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/helpers/validator.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/utils.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/axios/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/axios/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/axios/tslint.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/charenc/LICENSE.mkd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/charenc/README.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/charenc/charenc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/charenc/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/combined-stream/License" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/combined-stream/Readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/combined-stream/lib/combined_stream.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/combined-stream/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/combined-stream/yarn.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/crypt/LICENSE.mkd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/crypt/README.mkd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/crypt/crypt.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/crypt/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/delayed-stream/.npmignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/delayed-stream/License" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/delayed-stream/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/delayed-stream/Readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/delayed-stream/lib/delayed_stream.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/delayed-stream/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/follow-redirects/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/follow-redirects/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/follow-redirects/debug.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/follow-redirects/http.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/follow-redirects/https.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/follow-redirects/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/follow-redirects/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/form-data/License" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/form-data/README.md.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/form-data/Readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/form-data/index.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/form-data/lib/browser.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/form-data/lib/form_data.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/form-data/lib/populate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/form-data/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/md5/.travis.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/md5/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/md5/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/md5/demo/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/md5/dist/md5.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/md5/md5.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/md5/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/md5/test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/md5/webpack.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/string-random/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/string-random/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/string-random/index.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/string-random/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/string-random/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/string-random/test/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/javascripts/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/javascripts/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.pug" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -199,6 +76,7 @@
       <workItem from="1661237012202" duration="621000" />
       <workItem from="1661585161843" duration="634000" />
       <workItem from="1661689167998" duration="2664000" />
+      <workItem from="1661693542801" duration="1644000" />
     </task>
     <task id="LOCAL-00001" summary="Bug repair">
       <created>1660640866505</created>
@@ -347,7 +225,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661690314443</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="...">
+      <created>1661693690870</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1661693690870</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
