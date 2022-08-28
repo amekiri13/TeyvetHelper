@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="081223f0-dd9b-4403-bf88-fa154ed30aec" name="Changes" comment="...">
+      <change afterPath="$PROJECT_DIR$/.idea/TeyvetHelper.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/asynckit/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/asynckit/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/asynckit/bench.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/asynckit/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/asynckit/lib/abort.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/asynckit/lib/async.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/asynckit/lib/defer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/asynckit/lib/iterate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/asynckit/lib/readable_asynckit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/asynckit/lib/readable_parallel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/asynckit/lib/readable_serial.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/asynckit/lib/readable_serial_ordered.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/asynckit/lib/state.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/asynckit/lib/streamify.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/asynckit/lib/terminator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/asynckit/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/asynckit/parallel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/asynckit/serial.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/asynckit/serialOrdered.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/asynckit/stream.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/SECURITY.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/UPGRADE_GUIDE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/dist/axios.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/dist/axios.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/dist/axios.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/dist/axios.min.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/adapters/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/adapters/http.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/adapters/xhr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/axios.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/cancel/CancelToken.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/cancel/CanceledError.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/cancel/isCancel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/core/Axios.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/core/AxiosError.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/core/InterceptorManager.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/core/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/core/buildFullPath.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/core/dispatchRequest.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/core/mergeConfig.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/core/settle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/core/transformData.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/defaults/env/FormData.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/defaults/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/defaults/transitional.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/env/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/env/data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/helpers/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/helpers/bind.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/helpers/buildURL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/helpers/combineURLs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/helpers/cookies.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/helpers/deprecatedMethod.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/helpers/isAbsoluteURL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/helpers/isAxiosError.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/helpers/isURLSameOrigin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/helpers/normalizeHeaderName.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/helpers/null.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/helpers/parseHeaders.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/helpers/parseProtocol.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/helpers/spread.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/helpers/toFormData.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/helpers/validator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/tslint.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/charenc/LICENSE.mkd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/charenc/README.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/charenc/charenc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/charenc/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/combined-stream/License" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/combined-stream/Readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/combined-stream/lib/combined_stream.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/combined-stream/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/combined-stream/yarn.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/crypt/LICENSE.mkd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/crypt/README.mkd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/crypt/crypt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/crypt/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/delayed-stream/.npmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/delayed-stream/License" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/delayed-stream/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/delayed-stream/Readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/delayed-stream/lib/delayed_stream.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/delayed-stream/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/follow-redirects/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/follow-redirects/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/follow-redirects/debug.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/follow-redirects/http.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/follow-redirects/https.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/follow-redirects/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/follow-redirects/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/form-data/License" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/form-data/README.md.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/form-data/Readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/form-data/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/form-data/lib/browser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/form-data/lib/form_data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/form-data/lib/populate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/form-data/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/md5/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/md5/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/md5/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/md5/demo/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/md5/dist/md5.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/md5/md5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/md5/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/md5/test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/md5/webpack.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/string-random/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/string-random/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/string-random/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/string-random/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/string-random/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/string-random/test/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.pug" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2DQolD3GLXgt8m2EU2CGkQ1KvJb" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.format.on.save.advertiser.fired&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/amekiri/ElectionProject/RenScripts&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/views" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="www" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="bin/www" working-dir="$PROJECT_DIR$">
+      <EXTENSION ID="com.jetbrains.nodejs.run.NodeStartBrowserRunConfigurationExtension">
+        <browser start="true" url="http://localhost:3000" />
+      </EXTENSION>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="081223f0-dd9b-4403-bf88-fa154ed30aec" name="Changes" comment="" />
+      <created>1660640819798</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1660640819798</updated>
+      <workItem from="1660640821470" duration="8038000" />
+      <workItem from="1660706780532" duration="14103000" />
+      <workItem from="1660832582887" duration="1875000" />
+      <workItem from="1660892743320" duration="7599000" />
+      <workItem from="1660991429108" duration="2715000" />
+      <workItem from="1661052305804" duration="1097000" />
+      <workItem from="1661066280413" duration="627000" />
+      <workItem from="1661223999789" duration="2923000" />
+      <workItem from="1661237012202" duration="621000" />
+      <workItem from="1661585161843" duration="634000" />
+      <workItem from="1661689167998" duration="2664000" />
+    </task>
+    <task id="LOCAL-00001" summary="Bug repair">
+      <created>1660640866505</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1660640866505</updated>
+    </task>
+    <task id="LOCAL-00002" summary="...">
+      <created>1660642505312</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1660642505312</updated>
+    </task>
+    <task id="LOCAL-00003" summary="找不到国服DS算法，只支持国际服">
+      <created>1660643503674</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1660643503674</updated>
+    </task>
+    <task id="LOCAL-00004" summary="支持查询角色信息，圣遗物信息，深渊信息">
+      <created>1660644404885</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1660644404885</updated>
+    </task>
+    <task id="LOCAL-00005" summary="代码修正">
+      <created>1660644437938</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1660644437938</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Add post method">
+      <created>1660646481860</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1660646481860</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Basic function on web pages">
+      <created>1660712156212</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1660712156212</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Basic function on web pages">
+      <created>1660718821563</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1660718821563</updated>
+    </task>
+    <task id="LOCAL-00009" summary="可以显示基本信息">
+      <created>1660722609174</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1660722609174</updated>
+    </task>
+    <task id="LOCAL-00010" summary="可以显示基本信息，角色信息">
+      <created>1660726192901</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1660726192901</updated>
+    </task>
+    <task id="LOCAL-00011" summary="修正介绍错误">
+      <created>1660832714068</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1660832714068</updated>
+    </task>
+    <task id="LOCAL-00012" summary="支持显示大世界探索度">
+      <created>1660898070200</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1660898070200</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Bug修复">
+      <created>1660899946508</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1660899946508</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Bug修复">
+      <created>1660900202616</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1660900202617</updated>
+    </task>
+    <task id="LOCAL-00015" summary="界面调整">
+      <created>1660900511957</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1660900511957</updated>
+    </task>
+    <task id="LOCAL-00016" summary="界面调整">
+      <created>1660900845095</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1660900845095</updated>
+    </task>
+    <task id="LOCAL-00017" summary="...">
+      <created>1660902115105</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1660902115105</updated>
+    </task>
+    <task id="LOCAL-00018" summary="支持历史记录">
+      <created>1660902427396</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1660902427396</updated>
+    </task>
+    <task id="LOCAL-00019" summary="细节修正">
+      <created>1660902554034</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1660902554034</updated>
+    </task>
+    <task id="LOCAL-00020" summary="支持用户自定义Cookie">
+      <created>1661225534992</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1661225534992</updated>
+    </task>
+    <task id="LOCAL-00021" summary="提供RESTful风格">
+      <created>1661690314443</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1661690314443</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Bug repair" />
+    <MESSAGE value="由于国服米游社更新了DS算法，导致原算法失效。" />
+    <MESSAGE value="找不到国服DS算法，只支持国际服" />
+    <MESSAGE value="支持查询角色信息，圣遗物信息，深渊信息" />
+    <MESSAGE value="代码修正" />
+    <MESSAGE value="Add post method" />
+    <MESSAGE value="Basic function on web pages" />
+    <MESSAGE value="可以显示基本信息" />
+    <MESSAGE value="可以显示基本信息，角色信息" />
+    <MESSAGE value="修正介绍错误" />
+    <MESSAGE value="支持显示大世界探索度" />
+    <MESSAGE value="Bug修复" />
+    <MESSAGE value="界面调整" />
+    <MESSAGE value="支持历史记录" />
+    <MESSAGE value="细节修正" />
+    <MESSAGE value="支持用户自定义Cookie" />
+    <MESSAGE value="提供RESTful风格" />
+    <MESSAGE value="..." />
+    <option name="LAST_COMMIT_MESSAGE" value="..." />
+  </component>
+  <component name="VgoProject">
+    <settings-migrated>true</settings-migrated>
+  </component>
+</project>

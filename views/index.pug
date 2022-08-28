@@ -1,6 +1,8 @@
 extends layout
 
 block content
+    - var t_uid = uid;
+    - if (t_uid !== undefined) {console.log(t_uid)}
     script(src='/javascripts/main.js')
     div.container
         div.row.g-2
