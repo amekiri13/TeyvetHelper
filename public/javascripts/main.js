@@ -10,24 +10,7 @@ $().ready(()=> {
         methods:{
             judgeServer(event) {
                 // console.log(this.uid);
-                if (this.uid.charAt(0) === '1' || this.uid.charAt(0) === '2') {
-                    this.servername = "天空岛";
-                }
-                else if (this.uid.charAt(0) === '5') {
-                    this.servername = "世界树";
-                }
-                else if (this.uid.charAt(0) === '6') {
-                    this.servername = "America Server";
-                }
-                else if (this.uid.charAt(0) === '7') {
-                    this.servername = "Europe Server";
-                }
-                else if (this.uid.charAt(0) === '8') {
-                    this.servername = "Asia Server";
-                }
-                else if (this.uid.charAt(0) === '9') {
-                    this.servername = "HK, MC & TW Server";
-                }
+                this.servername = judgeServerFromUid(this.uid);
             },
             getCharacterData(event) {
                 getAndShowCharacterInfo(this.servername,this.uid);
@@ -53,8 +36,38 @@ $().ready(()=> {
         }
     };
 
+    if (isUidExist) {
+        let servername = judgeServerFromUid(t_uid);
+        let server = transformServerName(servername);
+        getAndShowCharacterInfo(server,t_uid);
+    }
+
     Vue.createApp(index).mount('#index');
 });
+
+function judgeServerFromUid(uid) {
+    if (uid.charAt(0) === '1' || uid.charAt(0) === '2') {
+        return "天空岛";
+    }
+    else if (uid.charAt(0) === '5') {
+        return "世界树";
+    }
+    else if (uid.charAt(0) === '6') {
+        return "America Server";
+    }
+    else if (uid.charAt(0) === '7') {
+        return "Europe Server";
+    }
+    else if (uid.charAt(0) === '8') {
+        return "Asia Server";
+    }
+    else if (uid.charAt(0) === '9') {
+        return "HK, MC & TW Server";
+    }
+    else {
+        return "unknown";
+    }
+}
 
 function transformServerName(server) {
     if (server === "天空岛")
