@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="081223f0-dd9b-4403-bf88-fa154ed30aec" name="Changes" comment="上述方法无效，已经被移除">
+    <list default="true" id="081223f0-dd9b-4403-bf88-fa154ed30aec" name="Changes" comment="RESTful风格已经完成">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/javascripts/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/javascripts/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.pug" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,9 +38,10 @@
     &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/amekiri/ElectionProject/RenScripts&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/amekiri/IdeaProjects/TeyvetHelper&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -80,7 +80,11 @@
       <workItem from="1661696528426" duration="1329000" />
       <workItem from="1661697878720" duration="3952000" />
       <workItem from="1661741091676" duration="4387000" />
-      <workItem from="1661904834735" duration="802000" />
+      <workItem from="1661904834735" duration="1547000" />
+      <workItem from="1661906399953" duration="5061000" />
+      <workItem from="1661927719926" duration="398000" />
+      <workItem from="1661934441391" duration="72000" />
+      <workItem from="1661934553695" duration="23000" />
     </task>
     <task id="LOCAL-00001" summary="Bug repair">
       <created>1660640866505</created>
@@ -264,7 +268,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661701648605</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="RESTful风格已经完成">
+      <created>1661905696851</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1661905696851</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -302,7 +313,8 @@
     <MESSAGE value="降低代码耦合性" />
     <MESSAGE value="..." />
     <MESSAGE value="上述方法无效，已经被移除" />
-    <option name="LAST_COMMIT_MESSAGE" value="上述方法无效，已经被移除" />
+    <MESSAGE value="RESTful风格已经完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="RESTful风格已经完成" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>

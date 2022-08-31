@@ -3,7 +3,7 @@ $().ready(()=> {
     const index = {
         data() {
             return {
-                'servername': 'Asia Server',
+                'servername': isUidExist ? judgeServerFromUid(t_uid) : 'Asia Server',
                 'uid': isUidExist ? t_uid : '802981415'
             }
         },
