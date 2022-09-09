@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="081223f0-dd9b-4403-bf88-fa154ed30aec" name="Changes" comment="RESTful风格已经完成">
+    <list default="true" id="081223f0-dd9b-4403-bf88-fa154ed30aec" name="Changes" comment="Bug修正">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/javascripts/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/javascripts/main.js" afterDir="false" />
     </list>
@@ -84,7 +84,8 @@
       <workItem from="1661906399953" duration="5061000" />
       <workItem from="1661927719926" duration="398000" />
       <workItem from="1661934441391" duration="72000" />
-      <workItem from="1661934553695" duration="23000" />
+      <workItem from="1661934553695" duration="254000" />
+      <workItem from="1662689851104" duration="348000" />
     </task>
     <task id="LOCAL-00001" summary="Bug repair">
       <created>1660640866505</created>
@@ -275,7 +276,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661905696851</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Bug修正">
+      <created>1661934594312</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1661934594312</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -314,7 +322,8 @@
     <MESSAGE value="..." />
     <MESSAGE value="上述方法无效，已经被移除" />
     <MESSAGE value="RESTful风格已经完成" />
-    <option name="LAST_COMMIT_MESSAGE" value="RESTful风格已经完成" />
+    <MESSAGE value="Bug修正" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bug修正" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>

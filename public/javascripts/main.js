@@ -38,8 +38,7 @@ $().ready(()=> {
 
     if (isUidExist) {
         let servername = judgeServerFromUid(t_uid);
-        let server = transformServerName(servername);
-        getAndShowCharacterInfo(server,t_uid);
+        getAndShowCharacterInfo(servername,t_uid);
     }
 
     Vue.createApp(index).mount('#index');
@@ -86,7 +85,7 @@ function transformServerName(server) {
 }
 
 function getAndShowCharacterInfo(server,uid) {
-    var servername = server;
+    let servername = server;
     server = transformServerName(server);
 
     axios.get(`/api/BasicInfo?uid=${uid}&server=${server}`)
