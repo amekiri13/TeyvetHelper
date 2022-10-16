@@ -6,6 +6,14 @@
 
 **访问地址：https://teyvet.amekiri.com**
 
+## 部署
+
+本项目支持Docker一键部署，只需要输入：
+````shell
+docker push amekiri/teyvet-helper:0.0.0
+docker run -itd --name teyvet-helper -p 80:3000 amekiri/teyvet-helper
+````
+
 ## 常见问题
 
 ### 显示“暂时不支持国服”
