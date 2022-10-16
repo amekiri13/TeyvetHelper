@@ -15,5 +15,26 @@
     "morgan": "~1.9.1",
     "pug": "2.0.0-beta11",
     "string-random": "^0.1.3"
+  },
+  "devDependencies": {
+    "pkg": "^5.8.0"
+  },
+  "bin": "./bin/www",
+  "pkg": {
+    "scripts": [
+      "./routes/*.js",
+      "./web/*.js",
+      "./utils/*.js",
+      "./app.js"
+    ],
+    "assets": [
+      "./views",
+      "./public"
+    ],
+    "targets": [
+      "win",
+      "linux",
+      "mac"
+    ]
   }
 }

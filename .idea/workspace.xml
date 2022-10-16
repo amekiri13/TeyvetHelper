@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="081223f0-dd9b-4403-bf88-fa154ed30aec" name="Changes" comment="pref:调整Bootstrap布局">
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+    <list default="true" id="081223f0-dd9b-4403-bf88-fa154ed30aec" name="Changes" comment="docs:更新文档">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +89,7 @@
       <workItem from="1661934553695" duration="254000" />
       <workItem from="1662689851104" duration="2859000" />
       <workItem from="1663032211499" duration="40000" />
-      <workItem from="1665909303974" duration="3669000" />
+      <workItem from="1665909303974" duration="7259000" />
     </task>
     <task id="LOCAL-00001" summary="Bug repair">
       <created>1660640866505</created>
@@ -300,7 +301,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665910349581</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="docs:更新文档">
+      <created>1665913031162</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1665913031162</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -342,7 +350,8 @@
     <MESSAGE value="Bug修正" />
     <MESSAGE value="fix:Bug修正，RESTful页面显示异常，解决了服务器显示服务器名称而不是参数名" />
     <MESSAGE value="pref:调整Bootstrap布局" />
-    <option name="LAST_COMMIT_MESSAGE" value="pref:调整Bootstrap布局" />
+    <MESSAGE value="docs:更新文档" />
+    <option name="LAST_COMMIT_MESSAGE" value="docs:更新文档" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
