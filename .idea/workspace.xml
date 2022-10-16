@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="081223f0-dd9b-4403-bf88-fa154ed30aec" name="Changes" comment="Bug修正">
+    <list default="true" id="081223f0-dd9b-4403-bf88-fa154ed30aec" name="Changes" comment="fix:Bug修正，RESTful页面显示异常，解决了服务器显示服务器名称而不是参数名">
+      <change afterPath="$PROJECT_DIR$/utils/random.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/javascripts/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/javascripts/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/ds.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/ds.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,21 +31,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.format.on.save.advertiser.fired&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/amekiri/IdeaProjects/TeyvetHelper&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.go.format.on.save.advertiser.fired": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "go.import.settings.migrated": "true",
+    "last_opened_file_path": "/home/amekiri/IdeaProjects/TeyvetHelper",
+    "list.type.of.created.stylesheet": "CSS",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/views" />
@@ -85,7 +87,9 @@
       <workItem from="1661927719926" duration="398000" />
       <workItem from="1661934441391" duration="72000" />
       <workItem from="1661934553695" duration="254000" />
-      <workItem from="1662689851104" duration="348000" />
+      <workItem from="1662689851104" duration="2859000" />
+      <workItem from="1663032211499" duration="40000" />
+      <workItem from="1665909303974" duration="942000" />
     </task>
     <task id="LOCAL-00001" summary="Bug repair">
       <created>1660640866505</created>
@@ -283,7 +287,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661934594312</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="fix:Bug修正，RESTful页面显示异常，解决了服务器显示服务器名称而不是参数名">
+      <created>1662690324832</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1662690324832</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -323,7 +334,8 @@
     <MESSAGE value="上述方法无效，已经被移除" />
     <MESSAGE value="RESTful风格已经完成" />
     <MESSAGE value="Bug修正" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bug修正" />
+    <MESSAGE value="fix:Bug修正，RESTful页面显示异常，解决了服务器显示服务器名称而不是参数名" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix:Bug修正，RESTful页面显示异常，解决了服务器显示服务器名称而不是参数名" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>

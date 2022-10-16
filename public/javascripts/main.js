@@ -146,18 +146,12 @@ function getAndShowCharacterInfo(server,uid) {
             let avatarNumber = data.data.avatars.length;
             console.log(avatarNumber);
             console.log(data);
-            let tempValue = 0;
-            for (let i=0;i<avatarNumber / 4;i++) {
-                $("#characters").append(`<div id="line${i}" class="row"></div>`);
-                for (let j=0;j < 4;j++) {
-                    if (tempValue < avatarNumber) {
-                        $("#line" + i).prepend(`<div class="col">
-                                        <img src="${data.data.avatars[tempValue].image}" style="margin: 0 auto">
-                                        <p style="margin: 5px auto;">${data.data.avatars[tempValue].name}&nbsp;${data.data.avatars[tempValue].level}级&nbsp;${data.data.avatars[tempValue].actived_constellation_num}命座&nbsp;好感度${data.data.avatars[tempValue].fetter}</p>
-                                    </div>`);
-                        tempValue++;
-                    }
-                }
+            $("#characters").append(`<div class="row" id="c_info"></div>`);
+            for (let i=0;i<avatarNumber;i++) {
+                $("#c_info").append(`<div class="col">
+                                            <img src="${data.data.avatars[i].image}" style="margin: 0 auto">
+                                            <p style="margin: 5px auto;">${data.data.avatars[i].name}&nbsp;${data.data.avatars[i].level}级&nbsp;${data.data.avatars[i].actived_constellation_num}命座&nbsp;好感度${data.data.avatars[i].fetter}</p>
+                                        </div>`);
             }
             $("#worldExploration").prepend(`
                             <h1 style="margin: 10px 0">世界探索度</h1>
