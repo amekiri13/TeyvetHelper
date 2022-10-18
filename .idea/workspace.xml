@@ -4,10 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="081223f0-dd9b-4403-bf88-fa154ed30aec" name="Changes" comment="docs:更新package.json文件">
-      <change afterPath="$PROJECT_DIR$/utils/softkeys.ts" afterDir="false" />
+    <list default="true" id="081223f0-dd9b-4403-bf88-fa154ed30aec" name="Changes" comment="feat:尝试引入国服DS算法">
+      <change afterPath="$PROJECT_DIR$/utils/softkeys.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/ds.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/ds.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/basic.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/basic.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +69,9 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/views" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/utils" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="www" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="bin/www" working-dir="$PROJECT_DIR$">
@@ -105,7 +114,7 @@
       <workItem from="1665909303974" duration="10629000" />
       <workItem from="1665922488362" duration="980000" />
       <workItem from="1665933890126" duration="2230000" />
-      <workItem from="1666055613582" duration="724000" />
+      <workItem from="1666055613582" duration="3223000" />
     </task>
     <task id="LOCAL-00001" summary="Bug repair">
       <created>1660640866505</created>
@@ -331,11 +340,23 @@
       <option name="project" value="LOCAL" />
       <updated>1665916598006</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="feat:尝试引入国服DS算法">
+      <created>1666056345211</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1666056345212</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/utils/softkeys.js" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -349,7 +370,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="由于国服米游社更新了DS算法，导致原算法失效。" />
     <MESSAGE value="找不到国服DS算法，只支持国际服" />
     <MESSAGE value="支持查询角色信息，圣遗物信息，深渊信息" />
     <MESSAGE value="代码修正" />
@@ -374,7 +394,8 @@
     <MESSAGE value="pref:调整Bootstrap布局" />
     <MESSAGE value="docs:更新文档" />
     <MESSAGE value="docs:更新package.json文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="docs:更新package.json文件" />
+    <MESSAGE value="feat:尝试引入国服DS算法" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat:尝试引入国服DS算法" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>

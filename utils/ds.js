@@ -2,6 +2,7 @@ const stringRandom = require('string-random');
 const md5 = require("md5");
 const {randomNum} = require("./random");
 const {sortKeys} = require("./softkeys");
+const crypto = require('crypto');
 function generateDS(salt) {
     let randomStr = stringRandom(6);
     let timestamp = Math.floor(Date.now() / 1000);
@@ -23,7 +24,9 @@ function generateCnDS(body,query) {
         .update(`salt=${salt}&t=${time}&r=${random}&b=${b}&q=${q}`)
         .digest('hex')
 
-    const dynamic = `${time},${random},${check}`
+    const dynamic = {time:time,random:random,check:check}
+
+    //`${time},${random},${check}`
 
     return dynamic
 }

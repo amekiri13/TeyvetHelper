@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-const {queryBasicInfo} = require('../web/basic');
+const {queryBasicInfo, queryBasicInfoCN} = require('../web/basic');
 const {queryDetailInfo} = require("../web/details");
 const {queryAbyssInfo} = require("../web/abyss");
 
@@ -9,7 +9,11 @@ router.get("/BasicInfo",(req, res,next) => {
     let uid = req.query.uid;
     let cookie = req.query.cookie;
     if (server.includes("cn")) {
-        res.json({"data":null,"message":"暂时不支持国服"});
+        if (cookie == undefined) {
+            queryBasicInfoCN(server,uid,result => {
+                res.json(result);
+            })
+        }
     }
     else {
         if (cookie == undefined) {
@@ -30,7 +34,11 @@ router.post("/BasicInfo",(req,res,next) => {
     let uid = req.body.uid;
     let cookie = req.body.cookie;
     if (server.includes("cn")) {
-        res.json({"data":null,"message":"暂时不支持国服"});
+        if (cookie == undefined) {
+            queryBasicInfoCN(server,uid,result => {
+                res.json(result);
+            })
+        }
     }
     else {
         if (cookie == undefined) {
